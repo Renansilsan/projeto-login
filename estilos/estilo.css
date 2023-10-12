@@ -23,15 +23,15 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /* para esconder o que estiver fora da borda*/
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 520px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
 
+    transform: translate(-50%, -50%);
     transition: width .1s, height .1s;
     transition-timing-function: ease;
 
@@ -107,12 +107,34 @@ div#ientrar > a.botao:hover {
     color: white;
 }
 
+span.material-symbols-outlined {
+    color: white;
+    width: 33px;
+    padding-top: 5px;
+
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+div.campo > input {
+    background-color: rgb(238, 167, 238);
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 70%;
+    border: 0px;
+    border-radius: 8px;
+    padding: bottom 4px;: 2px;
+    transform: translatey(-8px);
+}
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image: linear-gradient( to top, #49a09d, #5f2c82);
     }
     section#login {
         width: 90vw;
+        height: 300px;
     }
     section#login > div#imagem {
         float: left;
@@ -131,6 +153,7 @@ div#ientrar > a.botao:hover {
     }
     section#login {
         width: 950px;
+        height: 340px;
     }
 
     section#login > div#imagem {
@@ -147,7 +170,7 @@ div#ientrar > a.botao:hover {
         font-size: 2em;
     }
     div#formulario > p {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     
  }
